@@ -6,7 +6,7 @@ export default function App() {
   const [login, isLogin] = useState(false);
   const [invalid, isInvalid] = useState(false);
 
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if(data.username == "user" && data.password == "password"){
@@ -26,7 +26,6 @@ export default function App() {
   }
 
   return ( 
-      <div>
         <form action="submit" onSubmit={handleSubmit}>
           <h1>Login Page</h1>
             {login ? (
@@ -49,7 +48,6 @@ export default function App() {
             </div>
             )}
         </form>
-      </div>
   )
 }
 
