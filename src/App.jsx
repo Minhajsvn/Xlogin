@@ -39,10 +39,12 @@ export default function App() {
             ) : (
             <div>
               <div>
-                <label htmlFor="username">Username:<input type="text" name="username" id="username" required onChange={handleChange} /></label>
+                <label htmlFor="username">Username:</label>
+                <input type="text" name="username" id="username" required onChange={handleChange} />
               </div>
               <div>
-                <label htmlFor="password">Password:<input type="text" name="password" id="password" required onChange={handleChange} /></label>  
+                <label htmlFor="password">Password:</label>
+                <input type="text" name="password" id="password" required onChange={handleChange} />
               </div>
               <button type='submit'>Submit</button>
             </div>
